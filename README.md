@@ -104,7 +104,7 @@ This repo is set up as a Gradio Space, but it hasn't been deployed yet.
 2. Run `git lfs install` and `git lfs track "*.safetensors"`, because the model is 210 MB.
 3. Push this folder to the Space.
 
-Feedback saved on a free Space disappears when it restarts. Keep the verdicts by mounting persistent storage or sending them to a Hugging Face dataset.
+
 
 ## Limits
 
@@ -126,4 +126,4 @@ Feedback saved on a free Space disappears when it restarts. Keep the verdicts by
 
 Non-news examples for the news check come from [ucirvine/sms_spam](https://huggingface.co/datasets/ucirvine/sms_spam), [Abirate/english_quotes](https://huggingface.co/datasets/Abirate/english_quotes), [stanfordnlp/imdb](https://huggingface.co/datasets/stanfordnlp/imdb), [dair-ai/emotion](https://huggingface.co/datasets/dair-ai/emotion) and [SetFit/enron_spam](https://huggingface.co/datasets/SetFit/enron_spam), plus installed Python source code and generated gibberish.
 
-The base model is [google-bert/bert-base-uncased](https://huggingface.co/google-bert/bert-base-uncased). No licence has been chosen for this code yet. The trained model inherits the terms of its source data, so check those before any commercial use.
+The base model is [google-bert/bert-base-uncased](https://huggingface.co/google-bert/bert-base-uncased). 
