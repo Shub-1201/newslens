@@ -1,0 +1,478 @@
+{
+ "config": {
+  "seed": 42,
+  "max_length": 128,
+  "trainable_layers": 2,
+  "batch_size": 16,
+  "epochs": 3,
+  "lr": 3e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "huffpost_per_topic": 600,
+  "min_words": 5,
+  "val_fraction": 0.1,
+  "test_fraction": 0.1
+ },
+ "audit": {
+  "rows_in": 19742,
+  "dropped_unmapped_topic": 1700,
+  "dropped_duplicates": 589,
+  "rows_out": 17449,
+  "by_source": {
+   "mnds": 8752,
+   "huffpost": 6595,
+   "bbc": 2102
+  },
+  "by_topic": {
+   "business": 2073,
+   "sport": 1958,
+   "politics": 1884,
+   "science_tech": 1699,
+   "religion": 1353,
+   "health": 1285,
+   "entertainment": 1238,
+   "environment": 1185,
+   "education": 1159,
+   "crime_law": 1083,
+   "lifestyle": 895,
+   "disaster_weather": 850,
+   "conflict": 787
+  }
+ },
+ "split_sizes": {
+  "train": 13959,
+  "val": 1745,
+  "test": 1745
+ },
+ "train_rows_with_headline_views": 15263,
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 1.197515095283091,
+   "val_macro_f1": 0.7907875224472997
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.5273439927181738,
+   "val_macro_f1": 0.8187624312959211
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.40119426115377854,
+   "val_macro_f1": 0.8244924428889165
+  }
+ ],
+ "temperature": 1.100000023841858,
+ "test": {
+  "n": 1745,
+  "accuracy": 0.8292263610315186,
+  "macro_f1": 0.8303591129762646
+ },
+ "test_by_source": {
+  "bbc": {
+   "n": 211,
+   "accuracy": 0.95260663507109,
+   "macro_f1": 0.9615197257101054
+  },
+  "huffpost": {
+   "n": 660,
+   "accuracy": 0.7681818181818182,
+   "macro_f1": 0.7708655269190615
+  },
+  "mnds": {
+   "n": 874,
+   "accuracy": 0.8455377574370709,
+   "macro_f1": 0.8427218148881305
+  }
+ },
+ "test_headlines_only": {
+  "n": 861,
+  "accuracy": 0.6550522648083623,
+  "macro_f1": 0.6443387517506642
+ },
+ "per_topic": {
+  "business": {
+   "precision": 0.822429906542056,
+   "recall": 0.8502415458937198,
+   "f1-score": 0.836104513064133,
+   "support": 207.0
+  },
+  "politics": {
+   "precision": 0.8430232558139535,
+   "recall": 0.7671957671957672,
+   "f1-score": 0.8033240997229917,
+   "support": 189.0
+  },
+  "sport": {
+   "precision": 0.9238578680203046,
+   "recall": 0.9333333333333333,
+   "f1-score": 0.9285714285714286,
+   "support": 195.0
+  },
+  "entertainment": {
+   "precision": 0.8538461538461538,
+   "recall": 0.8951612903225806,
+   "f1-score": 0.8740157480314961,
+   "support": 124.0
+  },
+  "science_tech": {
+   "precision": 0.7320261437908496,
+   "recall": 0.6588235294117647,
+   "f1-score": 0.6934984520123839,
+   "support": 170.0
+  },
+  "health": {
+   "precision": 0.7835820895522388,
+   "recall": 0.8203125,
+   "f1-score": 0.8015267175572519,
+   "support": 128.0
+  },
+  "crime_law": {
+   "precision": 0.7789473684210526,
+   "recall": 0.6851851851851852,
+   "f1-score": 0.729064039408867,
+   "support": 108.0
+  },
+  "conflict": {
+   "precision": 0.8863636363636364,
+   "recall": 0.9873417721518988,
+   "f1-score": 0.9341317365269461,
+   "support": 79.0
+  },
+  "disaster_weather": {
+   "precision": 0.8409090909090909,
+   "recall": 0.8705882352941177,
+   "f1-score": 0.8554913294797688,
+   "support": 85.0
+  },
+  "environment": {
+   "precision": 0.8583333333333333,
+   "recall": 0.865546218487395,
+   "f1-score": 0.8619246861924686,
+   "support": 119.0
+  },
+  "lifestyle": {
+   "precision": 0.7641509433962265,
+   "recall": 0.9101123595505618,
+   "f1-score": 0.8307692307692308,
+   "support": 89.0
+  },
+  "education": {
+   "precision": 0.7983193277310925,
+   "recall": 0.8189655172413793,
+   "f1-score": 0.8085106382978723,
+   "support": 116.0
+  },
+  "religion": {
+   "precision": 0.8604651162790697,
+   "recall": 0.8161764705882353,
+   "f1-score": 0.8377358490566038,
+   "support": 136.0
+  }
+ },
+ "confidence_thresholds": {
+  "0.4": {
+   "coverage": 0.9793696275071633,
+   "accuracy_when_answering": 0.8420128730251609
+  },
+  "0.5": {
+   "coverage": 0.935243553008596,
+   "accuracy_when_answering": 0.8560049019607843
+  },
+  "0.6": {
+   "coverage": 0.8773638968481375,
+   "accuracy_when_answering": 0.8791639451338994
+  },
+  "0.7": {
+   "coverage": 0.8137535816618912,
+   "accuracy_when_answering": 0.9
+  },
+  "0.8": {
+   "coverage": 0.7214899713467049,
+   "accuracy_when_answering": 0.9293089753772835
+  }
+ },
+ "confusion_matrix": [
+  [
+   176,
+   2,
+   1,
+   1,
+   8,
+   7,
+   2,
+   0,
+   1,
+   1,
+   5,
+   3,
+   0
+  ],
+  [
+   7,
+   145,
+   0,
+   4,
+   11,
+   4,
+   6,
+   6,
+   1,
+   1,
+   0,
+   2,
+   2
+  ],
+  [
+   0,
+   0,
+   182,
+   4,
+   2,
+   0,
+   2,
+   0,
+   0,
+   0,
+   3,
+   2,
+   0
+  ],
+  [
+   0,
+   0,
+   5,
+   111,
+   2,
+   0,
+   2,
+   0,
+   0,
+   0,
+   2,
+   1,
+   1
+  ],
+  [
+   13,
+   6,
+   1,
+   2,
+   112,
+   8,
+   6,
+   0,
+   1,
+   8,
+   4,
+   6,
+   3
+  ],
+  [
+   5,
+   0,
+   1,
+   1,
+   5,
+   105,
+   0,
+   0,
+   0,
+   0,
+   7,
+   4,
+   0
+  ],
+  [
+   7,
+   5,
+   1,
+   2,
+   3,
+   0,
+   74,
+   0,
+   7,
+   2,
+   0,
+   3,
+   4
+  ],
+  [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   78,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   1,
+   2,
+   1,
+   0,
+   1,
+   0,
+   1,
+   1,
+   74,
+   4,
+   0,
+   0,
+   0
+  ],
+  [
+   0,
+   2,
+   1,
+   1,
+   5,
+   4,
+   0,
+   1,
+   1,
+   103,
+   1,
+   0,
+   0
+  ],
+  [
+   2,
+   0,
+   1,
+   1,
+   0,
+   4,
+   0,
+   0,
+   0,
+   0,
+   81,
+   0,
+   0
+  ],
+  [
+   1,
+   6,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   0,
+   95,
+   8
+  ],
+  [
+   2,
+   3,
+   2,
+   3,
+   3,
+   1,
+   2,
+   1,
+   2,
+   0,
+   3,
+   3,
+   111
+  ]
+ ],
+ "train_seconds_cpu": 4239.9469663790005,
+ "news_gate": {
+  "threshold": 0.46485617756843567,
+  "test_stories_passed": 0.974785100286533,
+  "test_headlines_passed": 0.98875,
+  "stories_passed_by_topic": {
+   "business": 0.9806763285024155,
+   "politics": 1.0,
+   "sport": 0.9948717948717949,
+   "entertainment": 0.9758064516129032,
+   "science_tech": 0.9529411764705882,
+   "health": 0.90625,
+   "crime_law": 0.9907407407407407,
+   "conflict": 1.0,
+   "disaster_weather": 0.9882352941176471,
+   "environment": 0.9915966386554622,
+   "lifestyle": 0.9438202247191011,
+   "education": 0.9827586206896551,
+   "religion": 0.9558823529411765
+  },
+  "caught_when_trained_on_kind": {
+   "text messages": 0.9533333333333334,
+   "quotes": 0.9742857142857143,
+   "film reviews": 0.9485714285714286,
+   "tweets": 0.9444444444444444,
+   "emails": 0.9266666666666666,
+   "code": 0.9942857142857143,
+   "gibberish": 1.0
+  },
+  "caught_when_kind_held_out": {
+   "text messages": 0.8933333333333333,
+   "quotes": 0.46,
+   "film reviews": 0.2257142857142857,
+   "tweets": 0.8688888888888889,
+   "emails": 0.6644444444444444,
+   "code": 0.9914285714285714,
+   "gibberish": 1.0
+  }
+ },
+ "saved_model": {
+  "stories": {
+   "n": 1745,
+   "accuracy": 0.8292263610315186,
+   "macro_f1": 0.8303709031822856,
+   "calibration_error": 0.026336374127420778,
+   "mean_confidence": 0.8480349140983598,
+   "given_a_desk": 0.9151862464183381,
+   "accuracy_when_given_a_desk": 0.8572323105823418
+  },
+  "source:bbc": {
+   "n": 211,
+   "accuracy": 0.95260663507109,
+   "macro_f1": 0.9615197257101054,
+   "calibration_error": 0.04989808614220102,
+   "mean_confidence": 0.9114342872847878,
+   "given_a_desk": 0.9620853080568721,
+   "accuracy_when_given_a_desk": 0.9753694581280788
+  },
+  "source:huffpost": {
+   "n": 660,
+   "accuracy": 0.7681818181818182,
+   "macro_f1": 0.7708655269190615,
+   "calibration_error": 0.04457344365390866,
+   "mean_confidence": 0.7976163594334414,
+   "given_a_desk": 0.8621212121212121,
+   "accuracy_when_given_a_desk": 0.81195079086116
+  },
+  "source:mnds": {
+   "n": 874,
+   "accuracy": 0.8455377574370709,
+   "macro_f1": 0.8427218148881305,
+   "calibration_error": 0.03718270439850659,
+   "mean_confidence": 0.8708026238655334,
+   "given_a_desk": 0.9439359267734554,
+   "accuracy_when_given_a_desk": 0.8593939393939394
+  },
+  "headlines": {
+   "n": 874,
+   "accuracy": 0.6556064073226545,
+   "macro_f1": 0.6440883085054221,
+   "calibration_error": 0.12715153227340714,
+   "mean_confidence": 0.7827579395960615,
+   "given_a_desk": 0.8489702517162472,
+   "accuracy_when_given_a_desk": 0.7169811320754716
+  }
+ }
+}

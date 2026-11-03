@@ -1,0 +1,298 @@
+{
+  "labelled": 26,
+  "correct": 24,
+  "stories_set_aside": 0,
+  "not_news_set_aside": 5,
+  "not_news_total": 5,
+  "stories": [
+    {
+      "title": "Chipmaker doubles forecast",
+      "expected": "business",
+      "predicted": "business",
+      "confidence": 0.951,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "science_tech"
+    },
+    {
+      "title": "Warehouse staff vote to strike",
+      "expected": "business",
+      "predicted": "business",
+      "confidence": 0.968,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "politics"
+    },
+    {
+      "title": "Budget vote splits coalition",
+      "expected": "politics",
+      "predicted": "politics",
+      "confidence": 0.951,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "business"
+    },
+    {
+      "title": "Senators stall border bill",
+      "expected": "politics",
+      "predicted": "politics",
+      "confidence": 0.971,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "crime_law"
+    },
+    {
+      "title": "Late winner sends club through",
+      "expected": "sport",
+      "predicted": "sport",
+      "confidence": 0.991,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "entertainment"
+    },
+    {
+      "title": "Sprinter breaks national record",
+      "expected": "sport",
+      "predicted": "sport",
+      "confidence": 0.984,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "entertainment"
+    },
+    {
+      "title": "Streaming drama leads nominations",
+      "expected": "entertainment",
+      "predicted": "entertainment",
+      "confidence": 0.966,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "lifestyle"
+    },
+    {
+      "title": "Band announces reunion tour",
+      "expected": "entertainment",
+      "predicted": "entertainment",
+      "confidence": 0.951,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "sport"
+    },
+    {
+      "title": "Open-source AI model released",
+      "expected": "science_tech",
+      "predicted": "science_tech",
+      "confidence": 0.962,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "business"
+    },
+    {
+      "title": "Probe finds water on asteroid",
+      "expected": "science_tech",
+      "predicted": "science_tech",
+      "confidence": 0.956,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "environment"
+    },
+    {
+      "title": "Weight-loss drug trial results",
+      "expected": "health",
+      "predicted": "health",
+      "confidence": 0.956,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "science_tech"
+    },
+    {
+      "title": "Hospitals warn of flu surge",
+      "expected": "health",
+      "predicted": "health",
+      "confidence": 0.978,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "science_tech"
+    },
+    {
+      "title": "Crypto founder sentenced",
+      "expected": "crime_law",
+      "predicted": "business",
+      "confidence": 0.813,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "crime_law"
+    },
+    {
+      "title": "Police arrest burglary suspects",
+      "expected": "crime_law",
+      "predicted": "crime_law",
+      "confidence": 0.931,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "disaster_weather"
+    },
+    {
+      "title": "Drone strikes hit power grid",
+      "expected": "conflict",
+      "predicted": "conflict",
+      "confidence": 0.93,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "politics"
+    },
+    {
+      "title": "Ceasefire talks break down",
+      "expected": "conflict",
+      "predicted": "conflict",
+      "confidence": 0.977,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "politics"
+    },
+    {
+      "title": "Earthquake topples buildings",
+      "expected": "disaster_weather",
+      "predicted": "disaster_weather",
+      "confidence": 0.717,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "environment"
+    },
+    {
+      "title": "Hurricane forces evacuations",
+      "expected": "disaster_weather",
+      "predicted": "environment",
+      "confidence": 0.754,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "disaster_weather"
+    },
+    {
+      "title": "Heat record for the oceans",
+      "expected": "environment",
+      "predicted": "environment",
+      "confidence": 0.924,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "science_tech"
+    },
+    {
+      "title": "River restored after dam removal",
+      "expected": "environment",
+      "predicted": "environment",
+      "confidence": 0.971,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "science_tech"
+    },
+    {
+      "title": "Quiet islands to visit this summer",
+      "expected": "lifestyle",
+      "predicted": "lifestyle",
+      "confidence": 0.95,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "health"
+    },
+    {
+      "title": "A better weeknight curry",
+      "expected": "lifestyle",
+      "predicted": "lifestyle",
+      "confidence": 0.929,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "health"
+    },
+    {
+      "title": "Teachers trial four-day week",
+      "expected": "education",
+      "predicted": "education",
+      "confidence": 0.946,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "business"
+    },
+    {
+      "title": "Universities cut tuition aid",
+      "expected": "education",
+      "predicted": "education",
+      "confidence": 0.882,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "science_tech"
+    },
+    {
+      "title": "Pope calls for peace at Easter",
+      "expected": "religion",
+      "predicted": "religion",
+      "confidence": 0.967,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "education"
+    },
+    {
+      "title": "New mosque opens to community",
+      "expected": "religion",
+      "predicted": "religion",
+      "confidence": 0.957,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "education"
+    },
+    {
+      "title": "Lawmakers debate AI rules",
+      "expected": null,
+      "predicted": "science_tech",
+      "confidence": 0.476,
+      "unsure": true,
+      "looks_like_news": true,
+      "second": "politics"
+    },
+    {
+      "title": "Flood insurance costs climb",
+      "expected": null,
+      "predicted": "business",
+      "confidence": 0.822,
+      "unsure": false,
+      "looks_like_news": true,
+      "second": "health"
+    }
+  ],
+  "not_news": [
+    {
+      "text": "asdf qwer zxcv uiop hjkl vbnm tyui ghjk",
+      "predicted": "science_tech",
+      "confidence": 0.91,
+      "unsure": false,
+      "looks_like_news": false
+    },
+    {
+      "text": "Hi team, please remember to submit your timesheets by Friday afternoon.",
+      "predicted": "education",
+      "confidence": 0.433,
+      "unsure": true,
+      "looks_like_news": false
+    },
+    {
+      "text": "To reset your password, click the link below and enter your new password twice.",
+      "predicted": "science_tech",
+      "confidence": 0.783,
+      "unsure": false,
+      "looks_like_news": false
+    },
+    {
+      "text": "def add(a, b): return a + b  # this function adds two numbers together",
+      "predicted": "science_tech",
+      "confidence": 0.584,
+      "unsure": false,
+      "looks_like_news": false
+    },
+    {
+      "text": "Les enfants jouent dans le jardin pendant que leurs parents pr\u00e9parent le d\u00eener.",
+      "predicted": "health",
+      "confidence": 0.242,
+      "unsure": true,
+      "looks_like_news": false
+    }
+  ]
+}

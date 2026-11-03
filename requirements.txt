@@ -1,0 +1,5 @@
+torch>=2.6
+transformers>=5.22,<6
+safetensors
+gradio>=6.31,<7
+pandas
